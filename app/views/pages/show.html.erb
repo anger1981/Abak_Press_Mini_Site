@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<%#*Передаем название страницы в title%>
+<% content_for :title do %>
+  <%= @page.name.to_s %>
+<% end %>
+
+<p>
+  <strong>Меню сайта:</strong>
+  
+ <%#*По количеству слэшэй в адресе определяем вложенные списки меню%>
+  
+  <%  count_slash = 0 %>
+  <% @pages_menu.each do |key,val| %>
+      <% while val.to_s.count('/') > count_slash %>
+          <%count_slash += 1 %>
+          <ul>
+      <%end%>
+      <% while val.to_s.count('/') < count_slash %>
+          <%count_slash -= 1%>
+          </ul>
+      <%end%>
+            
+          <li>
+              <a href="<%= val.to_s %>"><b><%= key.to_s %></b></a>
+          </li>
+  <% end %>
+<% while 0 < count_slash %>
+    <%count_slash -= 1%>
+    </ul>
+<%end%>
+</p>
+
+
+<h1> 
+<%= @page.title %> 
+</h1>
+
+<p>
+  <%= @page.body.html_safe %>
+</p>
+

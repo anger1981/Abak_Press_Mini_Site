@@ -1,0 +1,1188 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 00:05:09 +0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-4.1.1/lib/rails/templates/rails/welcome/index.html.erb (12.0ms)
+Completed 200 OK in 214ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 00:17:22 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (23.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36m (12.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 213ms (ActiveRecord: 21.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 00:17:23 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 1707ms (Views: 1703.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-09-10 00:17:25 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-10 00:17:25 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 00:17:25 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 00:17:25 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 00:17:25 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 00:17:26 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 00:17:26 +0600
+
+
+Started GET "/r_2" for 127.0.0.1 at 2014-09-10 00:17:34 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_2"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered pages/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 215ms (Views: 211.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1" for 127.0.0.1 at 2014-09-10 00:17:39 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered pages/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 189ms (Views: 182.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_7/r_7_ch_1" for 127.0.0.1 at 2014-09-10 00:17:41 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_7/r_7_ch_1"}
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 23]]
+  Rendered pages/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 228ms (Views: 218.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/r_9" for 127.0.0.1 at 2014-09-10 00:17:43 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_9"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 24]]
+  Rendered pages/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 246ms (Views: 235.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/r_8/r_8_ch_1" for 127.0.0.1 at 2014-09-10 00:17:47 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_8/r_8_ch_1"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered pages/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 187ms (Views: 181.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_8/r_8_ch_1" for 127.0.0.1 at 2014-09-10 00:17:54 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_8/r_8_ch_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered pages/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 223ms (Views: 213.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_8" for 127.0.0.1 at 2014-09-10 00:17:56 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_8"}
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered pages/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 218ms (Views: 210.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/This/is/root_8" for 127.0.0.1 at 2014-09-10 00:17:58 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"This/is/root_8"}
+  [1m[36m (0.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+Redirected to http://localhost:3000/r_1
+Filter chain halted as :parser_url rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 00:17:58 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 193ms (Views: 189.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 00:21:00 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 180ms (ActiveRecord: 13.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 00:21:01 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb (11.0ms)
+Completed 200 OK in 46ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 00:22:33 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 176ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 00:22:34 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb (15.0ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 00:30:32 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 172ms (ActiveRecord: 16.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 00:30:33 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb (12.0ms)
+Completed 200 OK in 43ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_9" for 127.0.0.1 at 2014-09-10 00:30:36 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_9"}
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered pages/show.html.erb (4.0ms)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/r_8/r_8_ch_1" for 127.0.0.1 at 2014-09-10 00:30:38 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_8/r_8_ch_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered pages/show.html.erb (3.0ms)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_8" for 127.0.0.1 at 2014-09-10 00:30:40 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_8"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered pages/show.html.erb (3.0ms)
+Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_7/r_7_ch_1" for 127.0.0.1 at 2014-09-10 00:30:41 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_7/r_7_ch_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 23]]
+  Rendered pages/show.html.erb (4.0ms)
+Completed 200 OK in 14ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 00:43:47 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 164ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 00:43:47 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb (11.0ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 00:44:39 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/show.html.erb (4.0ms)
+Completed 200 OK in 37ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 00:44:39 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb (2.0ms)
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 01:05:33 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 170ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 01:05:34 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb (10.0ms)
+Completed 200 OK in 42ms (Views: 36.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 01:27:08 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 168ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 01:27:29 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb (41.0ms)
+Completed 200 OK in 74ms (Views: 70.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/r_9" for 127.0.0.1 at 2014-09-10 01:28:06 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_9"}
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered pages/show.html.erb (2.0ms)
+Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/r_7/r_7_ch_1" for 127.0.0.1 at 2014-09-10 01:28:08 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_7/r_7_ch_1"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 23]]
+  Rendered pages/show.html.erb (2.0ms)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/r_5/r_5_ch_3" for 127.0.0.1 at 2014-09-10 01:28:10 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_5/r_5_ch_3"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 19]]
+  Rendered pages/show.html.erb (3.0ms)
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_5/r_5_ch_1" for 127.0.0.1 at 2014-09-10 01:28:11 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_5/r_5_ch_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered pages/show.html.erb (3.0ms)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_3/r_3_ch_2" for 127.0.0.1 at 2014-09-10 01:28:13 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_3/r_3_ch_2"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered pages/show.html.erb (2.0ms)
+Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_3/r_3_ch_1" for 127.0.0.1 at 2014-09-10 01:28:15 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_3/r_3_ch_1"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered pages/show.html.erb (3.0ms)
+Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/r_3" for 127.0.0.1 at 2014-09-10 01:28:16 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_3"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/show.html.erb (3.0ms)
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_2" for 127.0.0.1 at 2014-09-10 01:28:18 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_2"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered pages/show.html.erb (3.0ms)
+Completed 200 OK in 16ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_1/r_1_ch_2" for 127.0.0.1 at 2014-09-10 01:28:19 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1/r_1_ch_2"}
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered pages/show.html.erb (2.0ms)
+Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1" for 127.0.0.1 at 2014-09-10 01:28:21 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered pages/show.html.erb (3.0ms)
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 01:32:02 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 192ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 01:40:19 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb (11.0ms)
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 01:48:43 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ArgumentError (Layouts must be specified as a String, Symbol, Proc, false, or nil):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (25.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (102.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 01:49:36 +0600
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 132ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 01:49:37 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb (4.0ms)
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_1/r_1_ch_1" for 127.0.0.1 at 2014-09-10 01:52:36 +0600
+
+ArgumentError (Layouts must be specified as a String, Symbol, Proc, false, or nil):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.0ms)
+
+
+Started GET "/r_1/r_1_ch_1" for 127.0.0.1 at 2014-09-10 01:57:21 +0600
+
+ActionController::RoutingError (undefined method `render' for ApplicationController:Class):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (27.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (130.0ms)
+
+
+Started GET "/r_1/r_1_ch_1" for 127.0.0.1 at 2014-09-10 01:59:02 +0600
+
+ActionController::RoutingError (undefined method `render' for ApplicationController:Class):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.0ms)
+
+
+Started GET "/r_1/r_1_ch_1" for 127.0.0.1 at 2014-09-10 01:59:05 +0600
+
+ActionController::RoutingError (undefined method `render' for ApplicationController:Class):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.0ms)
+
+
+Started GET "/r_1/r_1_ch_1" for 127.0.0.1 at 2014-09-10 01:59:18 +0600
+
+NoMethodError (undefined method `variant' for nil:NilClass):
+  app/controllers/pages_controller.rb:10:in `initialize'
+
+
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.0ms)
+
+
+Started GET "/r_1/r_1_ch_1" for 127.0.0.1 at 2014-09-10 02:00:00 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1/r_1_ch_1"}
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered pages/show.html.erb (13.0ms)
+Completed 200 OK in 32ms (Views: 16.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1" for 127.0.0.1 at 2014-09-10 02:18:57 +0600
+
+ActionController::RoutingError (undefined method `render' for ApplicationController:Class):
+  app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.0ms)
+
+
+Started GET "/r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1" for 127.0.0.1 at 2014-09-10 02:20:38 +0600
+
+ActionController::RoutingError (undefined method `render' for ApplicationController:Class):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (99.0ms)
+
+
+Started GET "/r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1" for 127.0.0.1 at 2014-09-10 02:20:48 +0600
+
+ActionController::RoutingError (undefined method `render' for ApplicationController:Class):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller_/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.0ms)
+
+
+Started GET "/r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1" for 127.0.0.1 at 2014-09-10 02:21:07 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered pages/show.html.erb (12.0ms)
+Completed 200 OK in 29ms (Views: 16.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1" for 127.0.0.1 at 2014-09-10 02:23:23 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1/r_1_ch_1/r_1_ch_1_ch_1/r_1_ch_1_ch_1_ch_1"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered pages/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 430ms (Views: 416.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-09-10 02:23:23 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-10 02:23:23 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 02:23:23 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 02:23:23 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 02:23:23 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 02:23:23 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 02:23:23 +0600
+
+
+Started GET "/r_9" for 127.0.0.1 at 2014-09-10 02:23:28 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_9"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 24]]
+  Rendered pages/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 162ms (Views: 158.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/r_8/r_8_ch_1" for 127.0.0.1 at 2014-09-10 02:23:29 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_8/r_8_ch_1"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered pages/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 162ms (Views: 158.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_7/r_7_ch_1" for 127.0.0.1 at 2014-09-10 02:23:30 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_7/r_7_ch_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 23]]
+  Rendered pages/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 160ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 02:26:27 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 133ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 02:26:28 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 319ms (Views: 314.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 02:26:28 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-10 02:26:28 +0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-09-10 02:26:28 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 02:26:28 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 02:26:28 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 02:26:28 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 02:26:28 +0600
+
+
+Started GET "/r_9" for 127.0.0.1 at 2014-09-10 02:26:42 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_9"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered pages/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 191ms (Views: 186.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_9/add" for 127.0.0.1 at 2014-09-10 02:26:48 +0600
+Processing by PagesController#new as HTML
+  Parameters: {"url"=>"r_9"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 24]]
+  [1m[35m (1.0ms)[0m  SELECT MAX("pages"."id") AS max_id FROM "pages"
+  Rendered pages/_form_add.html.erb (218.0ms)
+  Rendered pages/new.html.erb within layouts/application (286.0ms)
+Completed 200 OK in 491ms (Views: 484.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-09-10 02:26:49 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-10 02:26:49 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 02:26:49 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 02:26:49 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 02:26:49 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 02:26:49 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 02:26:49 +0600
+
+
+Started POST "/add" for 127.0.0.1 at 2014-09-10 02:28:07 +0600
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yfrl6qoYzNL81fYgm2U1feQdXRNwDQq5/YRR/QCgGHc=", "page"=>{"parent_id"=>"24", "name"=>"r_9_ch_1", "title"=>"корневая 9 дочерняя 1", "body"=>"Это ** дочерняя ** страница 9"}, "commit"=>"Create Page", "url"=>"add"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mPage Exists (0.0ms)[0m  SELECT  1 AS one FROM "pages"  WHERE "pages"."name" = 'r_9_ch_1' LIMIT 1
+  [1m[36mSQL (8.0ms)[0m  [1mINSERT INTO "pages" ("body", "created_at", "name", "parent_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["body", "Это <b> дочерняя </b> страница 9"], ["created_at", "2014-09-09 20:28:07.253273"], ["name", "r_9_ch_1"], ["parent_id", 24], ["title", "корневая 9 дочерняя 1"], ["updated_at", "2014-09-09 20:28:07.253273"]]
+  [1m[35m (76.0ms)[0m  commit transaction
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 1)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 2)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 3)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 6)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 16)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 20)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 21)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 24)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 25 LIMIT 1[0m
+Redirected to http://localhost:3000/r_9/r_9_ch_1
+Completed 302 Found in 301ms (ActiveRecord: 92.0ms)
+
+
+Started GET "/r_9/r_9_ch_1" for 127.0.0.1 at 2014-09-10 02:28:07 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_9/r_9_ch_1"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 25]]
+  Rendered pages/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 196ms (Views: 192.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-10 02:28:07 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 02:28:07 +0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-09-10 02:28:07 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 02:28:07 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 02:28:07 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 02:28:07 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 02:28:07 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 11:02:12 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (152.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#first_root as HTML
+  [1m[35mPage Load (34.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 24)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 25 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT MIN("pages"."id") AS min_id FROM "pages"  WHERE (parent_id is NULL)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/r_1
+Completed 302 Found in 218ms (ActiveRecord: 46.0ms)
+
+
+Started GET "/r_1" for 127.0.0.1 at 2014-09-10 11:02:13 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 930ms (Views: 926.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:02:14 +0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-09-10 11:02:14 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-10 11:02:14 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:02:14 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:02:14 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:02:14 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:02:14 +0600
+
+
+Started GET "/add" for 127.0.0.1 at 2014-09-10 11:02:22 +0600
+Processing by PagesController#new_root as HTML
+  [1m[35m (0.0ms)[0m  SELECT MAX("pages"."id") AS max_id FROM "pages"
+  Rendered pages/_form_add.html.erb (70.0ms)
+  Rendered pages/new_root.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 293ms (Views: 287.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add" for 127.0.0.1 at 2014-09-10 11:02:22 +0600
+Processing by PagesController#new_root as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT MAX("pages"."id") AS max_id FROM "pages"[0m
+  Rendered pages/_form_add.html.erb (13.0ms)
+  Rendered pages/new_root.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 238ms (Views: 225.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-09-10 11:02:23 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:02:23 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:02:23 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:02:23 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-10 11:02:23 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:02:23 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:02:23 +0600
+
+
+Started POST "/add" for 127.0.0.1 at 2014-09-10 11:04:28 +0600
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rXnIMKw5vRN9UOovJr6DinWJ8gqW9xbGiNGqUPSa5kc=", "page"=>{"parent_id"=>"", "name"=>"r_10", "title"=>"корневая 10", "body"=>"** Корневая страница 10 ** (( r_1/r_1_ch_1 корневая 1 дочерняя 1 )) \\\\тест ссылки\\\\"}, "commit"=>"Create Page", "url"=>"add"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mPage Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "pages"  WHERE "pages"."name" = 'r_10' LIMIT 1[0m
+  [1m[35mSQL (25.0ms)[0m  INSERT INTO "pages" ("body", "created_at", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["body", "<b> Корневая страница 10 </b> <a href=\"/r_1/r_1_ch_1\">корневая 1 дочерняя 1 </a> <i>тест ссылки</i>"], ["created_at", "2014-09-10 05:04:28.685843"], ["name", "r_10"], ["title", "корневая 10"], ["updated_at", "2014-09-10 05:04:28.685843"]]
+  [1m[36m (65.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id is NULL)
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 1)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 2 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 2)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 3 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 3)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 14 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 4 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 5 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 6 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 6)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 7 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 13 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 15 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 16 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 16)
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 17 LIMIT 1[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 18 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 19 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 20 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 20)[0m
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 23 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 21 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT "pages".* FROM "pages"  WHERE (parent_id = 21)
+  [1m[36mPage Load (2.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 22 LIMIT 1[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 24 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT "pages".* FROM "pages"  WHERE (parent_id = 24)[0m
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 25 LIMIT 1
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."parent_id" = 26 LIMIT 1[0m
+Redirected to http://localhost:3000/r_10
+Completed 302 Found in 240ms (ActiveRecord: 104.0ms)
+
+
+Started GET "/r_10" for 127.0.0.1 at 2014-09-10 11:04:28 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_10"}
+  [1m[35mPage Load (1.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 26]]
+  Rendered pages/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 199ms (Views: 192.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-10 11:04:29 +0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-09-10 11:04:29 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:04:29 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:04:29 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:04:29 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:04:29 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:04:29 +0600
+
+
+Started GET "/r_1/r_1_ch_1" for 127.0.0.1 at 2014-09-10 11:04:32 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1/r_1_ch_1"}
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 192ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_10" for 127.0.0.1 at 2014-09-10 11:04:34 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_10"}
+  [1m[35mPage Load (0.0ms)[0m  SELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1  [["id", 26]]
+  Rendered pages/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 191ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/r_1/r_1_ch_1" for 127.0.0.1 at 2014-09-10 11:04:35 +0600
+Processing by PagesController#show as HTML
+  Parameters: {"url"=>"r_1/r_1_ch_1"}
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT  "pages".* FROM "pages"  WHERE "pages"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 201ms (Views: 192.0ms | ActiveRecord: 1.0ms)
