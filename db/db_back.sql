@@ -1,0 +1,10 @@
+CREATE TABLE "pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "title" varchar(255), "body" text, "reference" varchar(255), "created_at" datetime, "updated_at" datetime);
+INSERT INTO pages ( id,parent_id,name,title,body,reference,created_at,updated_at ) VALUES ( '1','','r_1','root_1','This is root_1 page','','2014-08-27 20:45:35.127286','2014-08-30 14:38:52.285872' );
+INSERT INTO pages ( id,parent_id,name,title,body,reference,created_at,updated_at ) VALUES ( '2','1','r_1_ch_1','root_1_child_1','This is root_1_child_1 page 2-nd edition','','2014-08-28 17:21:23.728328','2014-08-31 15:21:00.298833' );
+INSERT INTO pages ( id,parent_id,name,title,body,reference,created_at,updated_at ) VALUES ( '3','2','r_1_ch_1_ch_1','root_1_child_1_child_1','This is root_1_child_1_child_1 page','','2014-08-28 17:39:11.620408','2014-08-28 17:39:11.620408' );
+INSERT INTO pages ( id,parent_id,name,title,body,reference,created_at,updated_at ) VALUES ( '4','1','r_1_ch_2','root_1_child_2','This is root_1_child_2 page','','','' );
+INSERT INTO pages ( id,parent_id,name,title,body,reference,created_at,updated_at ) VALUES ( '5','','r_2','root_2','This is root_2 page','','','' );
+INSERT INTO pages ( id,parent_id,name,title,body,reference,created_at,updated_at ) VALUES ( '6','','r_3','root_3','This is root_3 page 5-th edition','','2014-08-30 12:19:13.364500','2014-08-31 06:40:56.811765' );
+INSERT INTO pages ( id,parent_id,name,title,body,reference,created_at,updated_at ) VALUES ( '7','6','r_3_ch_1','root_3_child_1','This is root_3_child_1 page','','2014-08-31 08:34:29.955102','2014-08-31 08:34:29.955102' );
+INSERT INTO pages ( id,parent_id,name,title,body,reference,created_at,updated_at ) VALUES ( '13','6','r_3_ch_2','root_3_child_2','This is root_3_child_2 page','','2014-08-31 15:42:53.654953','2014-08-31 15:42:53.654953' );
+INSERT INTO pages ( id,parent_id,name,title,body,reference,created_at,updated_at ) VALUES ( '14','3','r_1_ch_1_ch_1_ch_1','root_1_child_1_child_1_child_1','This is root_1_child_1_child_1_child_1 page','','2014-08-31 19:03:58.698307','2014-08-31 19:03:58.698307' );
